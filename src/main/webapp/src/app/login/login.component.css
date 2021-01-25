@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+  background: rgb(131,58,180);
+  background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(3px);
+  color: antiquewhite;
+  height: 100vh;
+  width: 100vw;
+}
+
+.studInfo {
+  margin: auto;
+  padding-top: 1%;
+  width: 75%;
+  color: antiquewhite;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-style: italic;
+  font-size: larger;
+}
+
+.studInfo td{
+  width: 25%;
+  text-align: center;
+  border: rgba(200,200,200,1) 1px solid;
+  transition: 0.2s;
+}
+
+.studInfo td:hover {
+  width: 27%;
+  transition: 0.2s;
+  border: azure 1px solid;
+  animation: normal jumping 1s;
+}
+
+.studInfo td:first-letter {
+  color: gold;
+}
+
+@keyframes jumping {
+  0% {
+    padding-left: 10px;
+  }
+  10%{
+    padding-left: 50px;
+  }
+  20% {
+    padding-right: 30px;
+  }
+  40% {
+    padding-left: 20px;
+  }
+  60% {
+    padding-right: 5px;
+  }
+  80% {
+    padding-left: 4px;
+  }
+  100% {
+    padding: 0;
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    transform: scale(0.9,0.9);
+  }
+  10% {
+    transform: scale(1.15,1.15);
+  }
+  20% {
+    transform: scale(1,1);
+  }
+  30% {
+    transform: scale(1.07,1.07);
+  }
+  40% {
+    transform: scale(1,1);
+  }
+  50% {
+    transform: scale(1.03,1.03);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+
+.clock {
+  color: aliceblue;
+  font-size: 7em;
+  width: fit-content;
+  margin: 10vh auto;
+}
+
+a {
+  font-size: 2em;
+  text-decoration: none;
+  margin: auto;
+  color: antiquewhite;
+  font-family:"Arial Black", sans-serif;
+}
+
+.forma {
+  width: 20%;
+  color: aliceblue;
+  text-align: center;
+  margin: 0 40% 0 40%;
+}
+
+.forma input {
+  width: 100%;
+}
+
+.alert {
+  color: greenyellow;
+}
+
+
